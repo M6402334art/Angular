@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'api';
+  ninjaName = 'Naruto';
+
+  ninjaConsole() {
+    console.log('Naruto is the best ninja');
+  }
+
+  changeNinjaName(name: string) {
+    this.ninjaName = name;
+  }
+
+
 }
