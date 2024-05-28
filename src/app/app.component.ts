@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'api';
+  title = 'api';
   // ninjaName = 'Naruto';
 
   // ninjaConsole() {
@@ -20,5 +20,13 @@ export class AppComponent {
   callBuffet(value: string) {
     const price = +value
     this.value = (price*3)/4
+  }
+
+  testClick(){
+    console.log('test EventBingding')
+  }
+
+  testNumberChange(){
+    console.log('test NumberChange')
   }
 }
