@@ -2,10 +2,20 @@
 <app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
 <button type="button" (click)="testClick()">testEventBinging</button> -->
 
-<app-max-min-meter
+<!-- <app-max-min-meter
 [minLabel]="'myMinLabel'"
 [maxLabel] = "'myMaxLabel'"
 (maxChange)="doAppMaxChange($event)"
 (minChange)="doAppMinChange($event)"
-></app-max-min-meter>
+></app-max-min-meter> -->
 
+<app-square-flex [divHeight]="squareHeight" [divWidth] ="squareWidth"></app-square-flex>
+<div>
+  width:
+  <button type="button" (click)="squareWidth=50">50px</button>
+  <button type="button" (click)="squareWidth=100">100px</button>
+  <button type="button" (click)="squareWidth=200">200px</button>
+  <button type="button" (click)="squareHeight=50">50px</button>
+  <button type="button" (click)="squareHeight=100">100px</button>
+  <button type="button" (click)="squareHeight=200">200px</button>
+</div>

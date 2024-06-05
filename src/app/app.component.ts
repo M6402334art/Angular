@@ -17,6 +17,9 @@ export class AppComponent {
   //   this.ninjaName = name;
   // }
   value = 0
+  squareHeight = 100;
+  squareWidth = 250;
+
   callBuffet(value: string) {
     const price = +value
     this.value = (price*3)/4
