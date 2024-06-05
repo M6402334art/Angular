@@ -29,4 +29,12 @@ export class AppComponent {
   testNumberChange(value: number){
     console.log('test NumberChange from app action bar:', value)
   }
+
+  doAppMinChange(value: number){
+    console.log('doAppMinChange from app action bar:', value)
+  }
+
+  doAppMaxChange(value: number){
+    console.log('doAppMaxChange from app action bar:', value)
+  }
 }
