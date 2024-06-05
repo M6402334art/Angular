@@ -26,7 +26,7 @@ export class AppComponent {
     console.log('test EventBingding')
   }
 
-  testNumberChange(){
-    console.log('test NumberChange')
+  testNumberChange(value: number){
+    console.log('test NumberChange from app action bar:', value)
   }
 }

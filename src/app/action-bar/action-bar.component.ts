@@ -13,14 +13,14 @@ export class ActionBarComponent {
   decrease() {
     if (this.counter-this.step >= 0 ) {
       this.counter = this.counter - this.step;
-      this.numberChange.emit();
+      this.numberChange.emit(this.counter);
     }
   }
 
   increase() {
     if (this.counter < 100 ) {
       this.counter = this.counter + this.step;
-      this.numberChange.emit();
+      this.numberChange.emit(this.counter);
     }
   }
 }

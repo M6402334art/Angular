@@ -1,3 +1,3 @@
-<app-action-bar (numberChange)="testNumberChange()" [step]="5"></app-action-bar> <!--(envnt binding), [input]-->
-<app-action-bar (numberChange)="testNumberChange()" [step]="10"></app-action-bar>
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar> <!--(envnt binding), [input]-->
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
 <button type="button" (click)="testClick()">testEventBinging</button>
